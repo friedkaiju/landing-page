@@ -10,31 +10,199 @@ body {
     display: flex;
     justify-content:space-around;
     align-items: center;
-    background: rgb(87, 87, 87)
+    align-content: center;
+    background: rgb(255, 153, 0);
+    padding: 16px;
+    object-fit: contain;
+    overflow: hidden;
+    overflow-wrap: break-word;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 
-.introduction {
+.logo {
+    color: white;
+    font-weight: 900;
+}
+
+.header-links a, li, ul {
     display: flex;
-    justify-content: space-around;
-    text-align: center;
-    top: 50px;
-}
-
-.introduction-image {
-    width: 50px;
-    height: 60px;
-}
-
-ul, a {
+    flex-direction: row;
+    padding: 0px;
     list-style-type: none;
     padding: 0;
     margin: 0;
     color: white;
     text-decoration: none;
+    gap: 16px;
 }
 
+.introduction {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    flex-wrap: wrap;
+    margin-top: 54px;
+    background: rgb(15, 150, 240);
+    color: white;
+    gap: 50px;
+}
 
-.logo {
-    height:50px;
-    width:auto;
+.introduction-text {
+    object-fit: contain;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+    max-width: 400px;
+
+}
+
+.introduction-title {
+    display:flex;
+    font-size: 60px;
+    font-weight: 900;
+    max-width: 500px;
+}
+
+.introduction-image {
+    width: 700px;
+    max-width: 100%;
+    height: auto;
+    border: 10px solid transparent;
+    border-radius: 50px;
+    text-align: center;
+    margin: 30px;
+    object-fit: contain;
+}
+
+.sign-up {
+    background-color:rgb(212, 67, 99);
+    color: white;
+    border: 5px solid transparent ;
+    border-radius: 10px;
+    width: 85px;
+    padding: 8px;
+    font-size: 16px;
+    font-weight: 900;
+    display: inline-block;
+}
+
+.information {
+    display:flex;
+    justify-content:center;
+    flex-direction:column;
+    background: rgb(212, 67, 99);
+}
+
+.information-title {
+    display:flex;
+    justify-content:center;
+    font-size: 60px;
+    font-weight: 900;
+    color: white;
+    padding:30px;
+    text-align: left;
+}
+
+.image-container {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    object-fit: contain;
+    flex-shrink: 1;
+}
+
+.image-pair {
+    max-width: 400px;
+    width: 290px;
+    height: 400px;
+    object-fit: cover;
+    text-align: center;
+}
+
+img {
+    width: 250px;
+    height: 250px;
+    justify-content: center;
+    border: 8px solid white;
+    border-radius: 50px;
+    object-fit: cover;
+    max-width: 100%;
+}
+
+.caption {
+    flex-wrap: wrap;
+    color: white;
+}
+
+.quote-container {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
+    background-color:rgb(255, 153, 0);
+    padding: 150px;
+    text-wrap: wrap;
+    gap: 8px;
+}
+
+.quote {
+    display:flex;
+    color: white;
+    font-size: 36px;
+    font-style: italic;
+    max-width: 75%;
+    flex-wrap: wrap;
+    text-wrap: wrap;
+}
+
+.customer {
+    color: white;
+    font-weight: bold;
+    font-size: 26px;
+    text-align: right;
+}
+
+.call-to-action-container {
+    display:flex;
+    padding: 150px;
+    padding-left: 200px;
+    padding-right: 200px;
+    background-color:white;
+    margin-bottom: 56px;
+    justify-content:center;
+    flex-direction: column;
+}
+
+.call-to-action-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color:rgb(15, 150, 240);
+    color: white;
+    border: 50px solid rgb(15, 150, 240);
+    border-radius: 20px;
+    overflow: visible;
+}
+
+.action-text {
+    font-weight: bold;
+}
+
+.footer {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    justify-content: center;
+    background-color: rgb(255, 153, 0);
+    color: white;
+    padding: 16px;
 }
